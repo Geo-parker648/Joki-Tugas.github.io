@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(36, 41, 46);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wraper {
+    width: 420px;
+    background-color: rgba(28, 32, 37, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.wraper h1 {
+    font-size: 30px; /* sebelumnya kamu tulis font: 20px (kurang tepat, harus font-size) */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wraper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 49, 54);
+    border: 2px solid rgb(43, 49, 54);
+    outline: none;
+    border-radius: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.input-box input:focus {
+    border: 2px solid chartreuse;
+    background-color: rgb(53, 59, 66);
+    transition: 0.3s ease;
+}
+
+.wraper .tombol:hover {
+    background-color: rgb(220, 220, 220);
+    color: rgb(28, 32, 37);
+    transition: 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: rgb(150, 160, 170);
+}
+
+.wraper .lupa-pass {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    color: white; 
+}
+.lupa-pass label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.wraper .tombol {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.wraper .link-daftar{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.link-daftar p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.link-daftar p a:hover {
+    color: chartreuse;
+}
+.wraper .tombol:active {
+    transform: scale(0.97);
+    transition: 0.1s ease;
+}
+
+@media (max-width: 480px) {
+    .wraper {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+a[href="Login website.html"] {
+  text-decoration: none;
+}
+
+
